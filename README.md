@@ -1,2 +1,2 @@
-# memorable-ids-java
+# memorable-ids
 Generate memorable/readable IDs in Java
