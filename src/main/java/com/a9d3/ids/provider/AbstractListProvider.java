@@ -1,7 +1,7 @@
-package com.aarondietz.ids.provider;
+package com.a9d3.ids.provider;
 
-import com.aarondietz.ids.FileUtil;
-import com.aarondietz.ids.StringProvider;
+import com.a9d3.ids.FileUtil;
+import com.a9d3.ids.StringProvider;
 
 import java.util.Deque;
 

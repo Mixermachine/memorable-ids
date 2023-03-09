@@ -1,9 +1,9 @@
-package com.aarondietz.ids.provider;
+package com.a9d3.ids.provider;
 
-import com.aarondietz.ids.StringProvider;
-import com.aarondietz.ids.phrase_provider.HistoryHumanPhraseProvider;
-import com.aarondietz.ids.phrase_provider.SafeAnimalPhraseProvider;
-import com.aarondietz.ids.phrase_provider.WorkbackPhraseProvider;
+import com.a9d3.ids.StringProvider;
+import com.a9d3.ids.phrase_provider.HistoryHumanPhraseProvider;
+import com.a9d3.ids.phrase_provider.SafeAnimalPhraseProvider;
+import com.a9d3.ids.phrase_provider.WorkbackPhraseProvider;
 import org.junit.Test;
 
 import java.time.Duration;

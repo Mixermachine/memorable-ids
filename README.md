@@ -7,13 +7,6 @@ No external libraries (besides jUnit) are used and thus this library is pretty l
 ## Example
 
 ```java
-import com.aarondietz.ids.phrase_provider.HistoryHumanPhraseProvider;
-import com.aarondietz.ids.phrase_provider.SafeAnimalPhraseProvider;
-import com.aarondietz.ids.phrase_provider.WorkbackPhraseProvider;
-import com.aarondietz.ids.provider.BlankProvider;
-import com.aarondietz.ids.provider.DotProvider;
-import com.aarondietz.ids.provider.HyphenProvider;
-
 public class MyTest {
     public static void main(String[] args) {
         StringProvider stringProvider = new WorkbackPhraseProvider(new HyphenProvider());
@@ -60,10 +53,6 @@ issue.
 ### Own implementation
 
 ```java
-import com.aarondietz.ids.provider.AdjectiveProvider;
-import com.aarondietz.ids.provider.NumberProvider;
-import com.aarondietz.ids.provider.SafeAnimalProvider;
-
 public class MyPhraseProvider extends AbstractPhraseProvider {
     public MyPhraseProvider(StringProvider joinStringProvider) {
         super(new AdjectiveProvider(true),

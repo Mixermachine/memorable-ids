@@ -1,4 +1,4 @@
-package com.aarondietz.ids.provider;
+package com.a9d3.ids.provider;
 
 public class AdverbProvider extends AbstractListProvider {
     public AdverbProvider(boolean shuffleContent) {

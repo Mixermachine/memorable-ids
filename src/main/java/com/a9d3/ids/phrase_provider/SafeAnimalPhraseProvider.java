@@ -1,9 +1,9 @@
-package com.aarondietz.ids.phrase_provider;
+package com.a9d3.ids.phrase_provider;
 
-import com.aarondietz.ids.StringProvider;
-import com.aarondietz.ids.provider.AdjectiveProvider;
-import com.aarondietz.ids.provider.NumberProvider;
-import com.aarondietz.ids.provider.SafeAnimalProvider;
+import com.a9d3.ids.StringProvider;
+import com.a9d3.ids.provider.AdjectiveProvider;
+import com.a9d3.ids.provider.NumberProvider;
+import com.a9d3.ids.provider.SafeAnimalProvider;
 
 /**
  * brave chipmunk 53

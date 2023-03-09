@@ -1,6 +1,6 @@
-package com.aarondietz.ids.phrase_provider;
+package com.a9d3.ids.phrase_provider;
 
-import com.aarondietz.ids.StringProvider;
+import com.a9d3.ids.StringProvider;
 
 import java.util.Arrays;
 import java.util.List;
