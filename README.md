@@ -25,8 +25,8 @@ public class MyTest {
         stringProvider.getTotalContentSize(); // 2,870,208
 
         stringProvider = new HistoryHumanPhraseProvider(new DotProvider());
-        stringProvider.getContent(); // pretty.hermann.3
-        stringProvider.getTotalContentSize(); // 6,101,568
+        stringProvider.getContent(); // pensive.gutenberg.60
+        stringProvider.getTotalContentSize(); // 3,554,496
     }
 }
 
@@ -54,7 +54,8 @@ lazy-pig-23"...
 
 Adjective _ HistoryHuman _ Number (0,99) -> funny-wilson-31
 
-Historical figures
+Historical figures. I tried to exclude controversial personalities. If you find something please let me know in an
+issue.
 
 ### Own implementation
 
