@@ -1,6 +1,6 @@
-package com.a9d3.ids;
+package de.a9d3.ids;
 
-import com.a9d3.ids.provider.HistoryHumanProvider;
+import de.a9d3.ids.provider.HistoryHumanProvider;
 
 import java.io.BufferedReader;
 import java.io.IOException;

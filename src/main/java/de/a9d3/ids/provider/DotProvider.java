@@ -1,11 +1,12 @@
-package com.a9d3.ids.provider;
+package de.a9d3.ids.provider;
 
-import com.a9d3.ids.StringProvider;
+import de.a9d3.ids.StringProvider;
 
-public class BlankProvider implements StringProvider {
+public class DotProvider implements StringProvider {
+
     @Override
     public String getContent() {
-        return " ";
+        return ".";
     }
 
     @Override

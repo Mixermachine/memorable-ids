@@ -1,7 +1,7 @@
-package com.a9d3.ids.phrase_provider;
+package de.a9d3.ids.phrase_provider;
 
-import com.a9d3.ids.StringProvider;
-import com.a9d3.ids.provider.*;
+import de.a9d3.ids.StringProvider;
+import de.a9d3.ids.provider.*;
 
 /**
  * 70 lovely parrots fly busily

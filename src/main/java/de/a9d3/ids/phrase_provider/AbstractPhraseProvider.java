@@ -1,6 +1,6 @@
-package com.a9d3.ids.phrase_provider;
+package de.a9d3.ids.phrase_provider;
 
-import com.a9d3.ids.StringProvider;
+import de.a9d3.ids.StringProvider;
 
 import java.util.Arrays;
 import java.util.List;

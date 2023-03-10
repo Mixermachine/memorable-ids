@@ -1,4 +1,4 @@
-package com.a9d3.ids.provider;
+package de.a9d3.ids.provider;
 
 public class HistoryHumanProvider extends AbstractListProvider {
 

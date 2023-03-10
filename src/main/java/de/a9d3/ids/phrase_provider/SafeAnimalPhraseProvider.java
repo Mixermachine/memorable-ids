@@ -1,9 +1,9 @@
-package com.a9d3.ids.phrase_provider;
+package de.a9d3.ids.phrase_provider;
 
-import com.a9d3.ids.StringProvider;
-import com.a9d3.ids.provider.AdjectiveProvider;
-import com.a9d3.ids.provider.NumberProvider;
-import com.a9d3.ids.provider.SafeAnimalProvider;
+import de.a9d3.ids.StringProvider;
+import de.a9d3.ids.provider.AdjectiveProvider;
+import de.a9d3.ids.provider.NumberProvider;
+import de.a9d3.ids.provider.SafeAnimalProvider;
 
 /**
  * brave chipmunk 53
