@@ -1,7 +1,5 @@
 package de.a9d3.ids;
 
-import de.a9d3.ids.provider.HistoryHumanProvider;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -22,8 +20,8 @@ public class FileUtil {
         // Util class should not instantiated
     }
 
-    public static Deque<String> loadToArrayDequeWithouBlanks(String resourcePath, boolean shuffle) {
-        try (InputStream data = HistoryHumanProvider.class.getClassLoader().getResourceAsStream(resourcePath)) {
+    public static Deque<String> loadToArrayDequeWithoutBlanks(String resourcePath, boolean shuffle) {
+        try (InputStream data = FileUtil.class.getClassLoader().getResourceAsStream(resourcePath)) {
             assert data != null;
             Stream<String> stringStream = new BufferedReader(new InputStreamReader(data, StandardCharsets.UTF_8)).lines()
                     .filter(line -> !line.trim().startsWith("//"))
@@ -37,7 +35,7 @@ public class FileUtil {
                 return stringStream.collect(Collectors.toCollection(ArrayDeque::new));
             }
         } catch (IOException e) {
-            throw new RuntimeException(e); // NOSONAR This error will never be thrown because the resources and implementations are static
+            throw new RuntimeException("Failed to load " + resourcePath, e); // NOSONAR This error will never be thrown because the resources and implementations are static
         }
     }
 }

@@ -20,7 +20,7 @@ abstract class AbstractListProvider implements StringProvider {
     }
 
     private void reloadContent() {
-        availableContent = FileUtil.loadToArrayDequeWithouBlanks(resourcePath, shuffleContent);
+        availableContent = FileUtil.loadToArrayDequeWithoutBlanks(resourcePath, shuffleContent);
     }
 
     @Override
