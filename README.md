@@ -1,8 +1,8 @@
 # memorable-ids
 
-Generate memorable/readable IDs in Java with ease.
-All parts are design to be reusable and implement the StringProvider interface.
-No external libraries (besides jUnit) are used and thus this library is pretty lightweight.
+Generate memorable/readable IDs in Java with ease.  
+All parts are design to be reusable and implement the StringProvider interface.  
+No external libraries (besides jUnit 5 for testing) are used and thus this library is pretty lightweight.
 
 ## Example
 

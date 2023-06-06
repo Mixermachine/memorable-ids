@@ -4,7 +4,7 @@ import de.a9d3.ids.StringProvider;
 import de.a9d3.ids.phrase_provider.HistoryHumanPhraseProvider;
 import de.a9d3.ids.phrase_provider.SafeAnimalPhraseProvider;
 import de.a9d3.ids.phrase_provider.WorkbackPhraseProvider;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -15,10 +15,10 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class StringProviderImplTest {
+class StringProviderImplTest {
     private static Map<String, StringProvider> stringProviders = new HashMap<>();
 
     public StringProviderImplTest() {
@@ -40,18 +40,18 @@ public class StringProviderImplTest {
     }
 
     @Test
-    public void testAllImplementations() {
+    void testAllImplementations() {
         stringProviders.forEach((name, stringProvider) -> {
-            assertTrue("Expected " + name + " to have more then 0 content",
-                    stringProvider.getTotalContentSize() > 0);
-            assertTrue("Expected " + name + " to have more then 0 left content",
-                    stringProvider.getLeftContentSize() > 0);
-            assertNotNull("Expected " + name + " to have non null content", stringProvider.getContent());
+            assertTrue(stringProvider.getTotalContentSize() > 0,
+                    "Expected " + name + " to have more then 0 content");
+            assertTrue(stringProvider.getLeftContentSize() > 0,
+                    "Expected " + name + " to have more then 0 left content");
+            assertNotNull(stringProvider.getContent(), "Expected " + name + " to have non null content");
         });
     }
 
     @Test
-    public void loadTest() {
+    void loadTest() {
         int iterations = 1000000;
         System.out.println("#########");
 
@@ -65,7 +65,7 @@ public class StringProviderImplTest {
     }
 
     @Test
-    public void totalContentTest() {
+    void totalContentTest() {
         System.out.println("#########");
         stringProviders.entrySet().stream() // Sort by permutation size
                 .sorted(Comparator.comparingLong(entry -> entry.getValue().getTotalContentSize()))
@@ -75,5 +75,4 @@ public class StringProviderImplTest {
                             entry.getValue().getTotalContentSize());
                 });
     }
-
 }
