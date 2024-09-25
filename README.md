@@ -1,8 +1,8 @@
 # memorable-ids
 
 Generate memorable/readable IDs in Java with ease.  
-All parts are design to be reusable and implement the StringProvider interface.  
-No external libraries (besides jUnit 5 for testing) are used and thus this library is pretty lightweight.
+All parts are designed to be reusable and implement the StringProvider interface.  
+No external libraries (besides jUnit 5 for testing) are used and thus this library is very lightweight.
 
 ## Example
 
@@ -77,5 +77,5 @@ Getting 1000000 strings from WorkbackPhraseProvider took 621ms
 
 ## References
 
-This library is heavily inspired by https://github.com/kkuegler/human-readable-ids-java
-I wanted to have more words and a more flexible design so I designed this library.
+This library is heavily inspired by https://github.com/kkuegler/human-readable-ids-java.  
+I wanted to include more words and a more flexible design so I created this library.
